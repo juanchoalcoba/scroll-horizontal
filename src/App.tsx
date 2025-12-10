@@ -8,12 +8,12 @@ function App() {
   useEffect(() => {
     const lenis = new Lenis();
 
-    // Aquí tipamos `e` como un objeto cualquiera (puedes ajustarlo si conoces la forma exacta)
+    
     lenis.on('scroll', (e: unknown) => {
       console.log(e);
     });
 
-    // Tipamos `time` como número
+    
     function raf(time: number) {
       lenis.raf(time);
       requestAnimationFrame(raf);

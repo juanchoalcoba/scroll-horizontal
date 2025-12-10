@@ -101,7 +101,7 @@ function HorizontalScrollShowcase(): React.ReactNode {
 
   return (
     <div className="bg-black text-white overflow-x-hidden">
-      {/* Hero Section */}
+      
       <div className="h-screen flex items-center justify-center relative overflow-hidden">
         <div className="absolute inset-0 bg-linear-to-br from-purple-900/20 to-blue-900/20"></div>
         <div className="text-center z-10 px-4">
@@ -129,7 +129,7 @@ function HorizontalScrollShowcase(): React.ReactNode {
         </div>
       </div>
 
-      {/* Horizontal Scroll Section */}
+      
       <div ref={containerRef} className="relative">
         <div ref={panelsRef} className="flex h-screen w-fit">
           {projects.map((project, index) => (
@@ -137,12 +137,12 @@ function HorizontalScrollShowcase(): React.ReactNode {
               key={project.id}
               className="panel w-screen h-screen flex items-center justify-center relative shrink-0"
             >
-              {/* Background Gradient */}
+      
               <div
                 className={`absolute inset-0 bg-linear-to-br ${project.color} opacity-20`}
               ></div>
 
-              {/* Grid Pattern */}
+      
               <div className="absolute inset-0 opacity-10">
                 <div
                   className="h-full w-full"
@@ -154,7 +154,7 @@ function HorizontalScrollShowcase(): React.ReactNode {
                 ></div>
               </div>
 
-              {/* Content */}
+      
               <div className="relative z-10 text-center px-8">
                 <div className="project-number absolute top-0 left-0 text-[20rem] font-black opacity-5">
                   {String(index + 1).padStart(2, "0")}
@@ -176,7 +176,7 @@ function HorizontalScrollShowcase(): React.ReactNode {
                   {project.category}
                 </p>
 
-                {/* Decorative Elements */}
+      
                 <div className="mt-12 flex justify-center gap-4">
                   <div
                     className={`w-20 h-1 bg-linear-to-r ${project.color}`}
@@ -190,7 +190,7 @@ function HorizontalScrollShowcase(): React.ReactNode {
                 </div>
               </div>
 
-              {/* Corner Accent */}
+      
               <div
                 className={`absolute bottom-8 right-8 w-32 h-32 bg-linear-to-br ${project.color} rounded-full blur-3xl opacity-30`}
               ></div>
@@ -199,7 +199,7 @@ function HorizontalScrollShowcase(): React.ReactNode {
         </div>
       </div>
 
-      {/* Final Section */}
+      
       <div className="h-screen flex items-center justify-center relative overflow-hidden bg-linear-to-br from-black via-purple-950 to-black">
         <div className="text-center z-10 px-4">
           <h2 className="text-6xl md:text-8xl font-black mb-6">
