@@ -1,73 +1,41 @@
-# React + TypeScript + Vite
+# ⚛️ Proyecto de Animación Web Avanzada 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## React + TypeScript + Vite | GSAP, Lenis & Framer Motion
 
-Currently, two official plugins are available:
+Este proyecto es una demostración avanzada de técnicas de animación y rendimiento web en un entorno de desarrollo moderno (React con TypeScript y Vite). La característica central es una **experiencia de *scroll* horizontal fluida** impulsada por la combinación de **GSAP** y **Lenis**, complementada con la versatilidad de **Framer Motion** para otras animaciones en la interfaz.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Características Principales
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+* **Smooth Scroll de Alto Rendimiento:** Implementación de **Lenis** para reemplazar el *scroll* nativo del navegador, proporcionando una experiencia suave y configurable.
+* **Animación Horizontal del Scroll (GSAP ScrollTrigger):** Uso de **GSAP (GreenSock)** y su plugin **ScrollTrigger** para anclar el desplazamiento horizontal a la acción de *scroll* vertical.
+* **Animaciones Reactivas con Framer Motion:** Empleo de **Framer Motion** para transiciones de elementos de interfaz, animaciones basadas en el estado y efectos de presencia/ausencia.
+* **Desarrollo Moderno:** Configurado con **React**, **TypeScript** para un código robusto y escalable, y **Vite** para una experiencia de desarrollo ultrarrápida.
+* **Responsive 100%:** Diseño optimizado para funcionar y animarse correctamente en todos los tamaños de pantalla.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tecnologías Utilizadas
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+| Categoría | Tecnología | Uso Específico |
+| :--- | :--- | :--- |
+| **Framework & Stack** | React, TypeScript, Vite | Base de la aplicación y tipado estricto. |
+| **Smooth Scroll** | Lenis | Control y suavidad del *scroll* global. |
+| **Animación del Scroll** | GSAP (ScrollTrigger) | Animación compleja (*pinning*, horizontal *scroll*, *scrub*). |
+| **Animaciones UI** | Framer Motion | Animaciones de componentes, gestos y estados. |
+| **Estilos** | (Reemplazar con tu tecnología de CSS, ej: Tailwind CSS, SCSS) | Estilizado y diseño responsive. |
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## ⚙️ Configuración e Instalación
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 1. Requisitos
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Asegúrate de tener instalado [Node.js](https://nodejs.org/) (versión LTS recomendada).
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 2. Clonar el Repositorio
+
+```bash
+git clone [https://docs.github.com/es/repositories/creating-and-managing-repositories/quickstart-for-repositories](https://docs.github.com/es/repositories/creating-and-managing-repositories/quickstart-for-repositories)
+cd scroll-horizontal
