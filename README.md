@@ -39,3 +39,4 @@ Asegúrate de tener instalado [Node.js](https://nodejs.org/) (versión LTS recom
 ```bash
 git clone [https://docs.github.com/es/repositories/creating-and-managing-repositories/quickstart-for-repositories](https://docs.github.com/es/repositories/creating-and-managing-repositories/quickstart-for-repositories)
 cd scroll-horizontal
+npm run dev
